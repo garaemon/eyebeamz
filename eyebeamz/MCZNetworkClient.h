@@ -10,8 +10,6 @@
 
 @interface MCZNetworkClient : NSObject <NSURLConnectionDelegate>
 
-+ (id)callback:(void(^)(NSDictionary*))callback
-  failCallback:(void(^)())failCallback;
++ (id)callback:(void(^)(NSString*))callback;
 - (void)postPhoto:(UIImage*)image;
-
 @end

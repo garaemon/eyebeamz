@@ -9,12 +9,65 @@
 #import "MCZRootViewController.h"
 #import "MCZUtil.h"
 #import "MCZNetworkClient.h"
+#import "MCZResultViewController.h"
 
 @interface MCZRootViewController ()
+@property (strong, nonatomic) UIActivityIndicatorView* activityIndicator;
+@property (strong, nonatomic) UIView* indicatorView;
 
 @end
 
 @implementation MCZRootViewController
+@synthesize activityIndicator = _activityIndicator;
+@synthesize indicatorView = _indicatorView;
+
+- (void)createIndicator
+{
+  if (!_indicatorView) {
+    CGRect frame = CGRectMake(0, 0,
+                              320, 480);
+    _indicatorView = [[UIView alloc] initWithFrame:frame];
+    _indicatorView.backgroundColor = MCZRGBA(0.0, 0.0, 0.0, 0.8);
+    _indicatorView.hidden = YES;
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.text = LOCALIZED_STRING(@"uploading...");
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont fontWithName:@"HelveticaNeue"
+                                 size:13];
+    label.backgroundColor = [UIColor clearColor];
+    [label sizeToFit];
+    label.center = CGPointMake(320.0 / 2.0, 260);
+    [_indicatorView addSubview:label];
+  }
+  if (!_activityIndicator) {
+    CGRect indicatorFrame = CGRectMake((320 - 21) / 2.0,
+                                       (480 - 21) / 2.0,
+                                       21, 21);
+    _activityIndicator
+      = [[UIActivityIndicatorView alloc] initWithFrame:indicatorFrame];
+    _activityIndicator.activityIndicatorViewStyle
+      = UIActivityIndicatorViewStyleWhite;
+    [_indicatorView addSubview:_activityIndicator];
+    //[self.view addSubview:_indicatorView];
+    // [self.view addSubview:_indicatorView];
+    // [self.view bringSubviewToFront:_indicatorView];
+  }
+}
+
+- (void)showIndicator
+{
+  _indicatorView.hidden = NO;
+  if (![_activityIndicator isAnimating])
+    [_activityIndicator startAnimating];
+}
+
+- (void)hideIndicator
+{
+  _indicatorView.hidden = YES;
+  if ([_activityIndicator isAnimating])
+    [_activityIndicator stopAnimating];
+}
+
 
 - (void)alertView:(NSString*)title message:(NSString*)message
 {
@@ -62,6 +115,11 @@
   [super viewDidUnload];
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
+}
+
+- (void)loadView {
+  [super loadView];
+  [self createIndicator];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -138,16 +196,92 @@
   [self dismissModalViewControllerAnimated:YES];
 }
 
+- (void)modalResultView:(MCZResultViewController*)resultView
+{
+  UINavigationController* navigationController
+    = [[UINavigationController alloc]
+        initWithRootViewController:resultView];
+  [self presentModalViewController:navigationController animated:YES];
+}
+
+- (void)showResult:(NSURL*)imageURL
+{
+  NSString* baseURL = @"https://eyebeam.herokuapp.com";
+  NSString* fullURL = FORMAT(@"%@%@",baseURL, imageURL);
+  MCZResultViewController* resultView = [[MCZResultViewController alloc] init];
+  [resultView loadHTMLString:FORMAT(@"<html>\
+<head>\
+</head>\
+<body>\
+<img src='%@' />\
+</body>\
+</html>\
+", fullURL) imageURL:fullURL];
+  [self performSelector:@selector(modalResultView:)
+             withObject:resultView
+             afterDelay:0.5];
+}
+
 - (void)imagePickerController:(UIImagePickerController*)picker
         didFinishPickingImage:(UIImage*)image editingInfo:(NSDictionary*)editingInfo
 {
   LOG_INFO(@"closed");
-  MCZNetworkClient* client = [MCZNetworkClient callback:^(NSDictionary* dummy){
-    }
-  failCallback:^() {
+  __weak __block MCZRootViewController* weakSelf = self;
+  MCZNetworkClient* client = [MCZNetworkClient callback:^(NSString* result){
+      if (IS_VALID_STRING(result)) {
+        // extract image url
+        NSError* error = nil;
+        NSRegularExpression *regexp =
+        [NSRegularExpression regularExpressionWithPattern:@"src='(/beam/.+\.jpg)'"
+                                                  options:0
+                                                    error:&error];
+        NSMutableArray *dats = [[NSMutableArray alloc] init];
+        [regexp enumerateMatchesInString:result options:0 
+                                   range:NSMakeRange(0, result.length)
+                              usingBlock:^(NSTextCheckingResult *arr, NSMatchingFlags flag, BOOL *stop) {
+            [dats addObject: [result substringWithRange:[arr rangeAtIndex:1]]];
+          }];
+        
+        if ([dats count] > 0) {
+          // success
+          LOG_INFO(@"success! %@", dats);
+          [weakSelf dismissModalViewControllerAnimated:YES];
+          [weakSelf showResult:ELT(dats, 0)];
+        }
+        else {
+          // error
+          LOG_INFO(@"failed!");
+          [weakSelf alertView:@"Sorry" message:@"Failed to upload the image"];
+          [weakSelf dismissModalViewControllerAnimated:YES];
+        }
+      }
+      else {
+        LOG_INFO(@"failed!");
+        [weakSelf alertView:@"Sorry" message:@"Failed to upload the image"];
+        [weakSelf dismissModalViewControllerAnimated:YES];
+      }
     }];
-  [client postPhoto:image];
-  [self dismissModalViewControllerAnimated:YES];
+  // before that, we add indicator
+  [self showIndicator];
+  [picker.view addSubview:_indicatorView];
+  [picker.view bringSubviewToFront:_indicatorView];
+  if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
+    // smallize
+    UIImage *image_resized;  // リサイズ後UIImage
+    float widthPer = 0.5;  // リサイズ後幅の倍率
+    float heightPer = 0.5;  // リサイズ後高さの倍率
+    
+    CGSize sz = CGSizeMake(image.size.width*widthPer,
+                           image.size.height*heightPer);
+    UIGraphicsBeginImageContext(sz);
+    [image drawInRect:CGRectMake(0, 0, sz.width, sz.height)];
+    image_resized = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [client postPhoto:image_resized];
+  }
+  else {
+    [client postPhoto:image];
+  }
 }
 
 #pragma mark - Table view delegate

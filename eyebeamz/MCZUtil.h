@@ -45,7 +45,7 @@
                                                blue:B/255.0       \
                                               alpha:A])
 
-#ifdef DEBUG
+//#ifdef DEBUG
 // #define LOG_INFO(...)  NSLog(__VA_ARGS__)
 // #define LOG_WARN(...)  NSLog(__VA_ARGS__)
 // #define LOG_ERROR(...) NSLog(__VA_ARGS__)
@@ -56,12 +56,12 @@
 #define LOG_ERROR(...) NSLog(@"[ERROR/%s] %@",                  \
                              __func__, FORMAT(__VA_ARGS__))
 #define LOG_FATAL(...) NSLog(@"[FATAL/%s] %@", __func__, FORMAT(__VA_ARGS__))
-#else
-#define LOG_INFO(...) ;
-#define LOG_WARN(...) ;
-#define LOG_ERROR(...) ;
-#define LOG_FATAL(...) ;
-#endif  // DEBUG
+// #else
+// #define LOG_INFO(...) ;
+// #define LOG_WARN(...) ;
+// #define LOG_ERROR(...) ;
+// #define LOG_FATAL(...) ;
+// #endif  // DEBUG
 
 
 #define PUSH_GDC_QUEUE(BLOCK) \

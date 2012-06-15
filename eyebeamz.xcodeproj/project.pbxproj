@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F17096A8158AE0F100EAB3E2 /* MCZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096A7158AE0F100EAB3E2 /* MCZRootViewController.m */; };
 		F17096AB158AE5B200EAB3E2 /* MCZNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096AA158AE5B200EAB3E2 /* MCZNetworkClient.m */; };
+		F17096AF158AFB9F00EAB3E2 /* MCZResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096AE158AFB9F00EAB3E2 /* MCZResultViewController.m */; };
 		F1D1A560158ADF3200447996 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A55F158ADF3200447996 /* UIKit.framework */; };
 		F1D1A562158ADF3200447996 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A561158ADF3200447996 /* Foundation.framework */; };
 		F1D1A564158ADF3200447996 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A563158ADF3200447996 /* CoreGraphics.framework */; };
@@ -22,6 +23,9 @@
 		F17096A7158AE0F100EAB3E2 /* MCZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZRootViewController.m; sourceTree = "<group>"; };
 		F17096A9158AE5B200EAB3E2 /* MCZNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCZNetworkClient.h; sourceTree = "<group>"; };
 		F17096AA158AE5B200EAB3E2 /* MCZNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZNetworkClient.m; sourceTree = "<group>"; };
+		F17096AC158AEE8200EAB3E2 /* MCZUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCZUtil.h; sourceTree = "<group>"; };
+		F17096AD158AFB9F00EAB3E2 /* MCZResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCZResultViewController.h; sourceTree = "<group>"; };
+		F17096AE158AFB9F00EAB3E2 /* MCZResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZResultViewController.m; sourceTree = "<group>"; };
 		F1D1A55B158ADF3200447996 /* eyebeamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyebeamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D1A55F158ADF3200447996 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1D1A561158ADF3200447996 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +88,9 @@
 				F17096A7158AE0F100EAB3E2 /* MCZRootViewController.m */,
 				F17096A9158AE5B200EAB3E2 /* MCZNetworkClient.h */,
 				F17096AA158AE5B200EAB3E2 /* MCZNetworkClient.m */,
+				F17096AD158AFB9F00EAB3E2 /* MCZResultViewController.h */,
+				F17096AE158AFB9F00EAB3E2 /* MCZResultViewController.m */,
+				F17096AC158AEE8200EAB3E2 /* MCZUtil.h */,
 				F1D1A566158ADF3200447996 /* Supporting Files */,
 			);
 			path = eyebeamz;
@@ -166,6 +173,7 @@
 				F1D1A570158ADF3200447996 /* MCZAppDelegate.m in Sources */,
 				F17096A8158AE0F100EAB3E2 /* MCZRootViewController.m in Sources */,
 				F17096AB158AE5B200EAB3E2 /* MCZNetworkClient.m in Sources */,
+				F17096AF158AFB9F00EAB3E2 /* MCZResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
