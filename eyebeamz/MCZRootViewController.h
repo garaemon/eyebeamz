@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MCZRootViewController : UIViewController
-
+@interface MCZRootViewController : UITableViewController <UIImagePickerControllerDelegate,
+                                                            UIActionSheetDelegate>
+- (id)initWithoutStyle;
 @end

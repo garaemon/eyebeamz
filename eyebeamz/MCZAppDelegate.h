@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class MCZViewController;
+@class MCZRootViewController;
 
 @interface MCZAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MCZViewController *viewController;
+@property (strong, nonatomic) MCZRootViewController *viewController;
 
 @end

@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F17096A4158AE01F00EAB3E2 /* MCZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096A3158AE01F00EAB3E2 /* MCZRootViewController.m */; };
+		F17096A8158AE0F100EAB3E2 /* MCZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096A7158AE0F100EAB3E2 /* MCZRootViewController.m */; };
+		F17096AB158AE5B200EAB3E2 /* MCZNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096AA158AE5B200EAB3E2 /* MCZNetworkClient.m */; };
 		F1D1A560158ADF3200447996 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A55F158ADF3200447996 /* UIKit.framework */; };
 		F1D1A562158ADF3200447996 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A561158ADF3200447996 /* Foundation.framework */; };
 		F1D1A564158ADF3200447996 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A563158ADF3200447996 /* CoreGraphics.framework */; };
 		F1D1A56A158ADF3200447996 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1D1A568158ADF3200447996 /* InfoPlist.strings */; };
 		F1D1A56C158ADF3200447996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D1A56B158ADF3200447996 /* main.m */; };
 		F1D1A570158ADF3200447996 /* MCZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */; };
-		F1D1A573158ADF3200447996 /* MCZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D1A572158ADF3200447996 /* MCZViewController.m */; };
-		F1D1A576158ADF3200447996 /* MCZViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */; };
-		F1D1A579158ADF3200447996 /* MCZViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F17096A2158AE01F00EAB3E2 /* MCZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCZRootViewController.h; sourceTree = "<group>"; };
-		F17096A3158AE01F00EAB3E2 /* MCZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZRootViewController.m; sourceTree = "<group>"; };
+		F17096A6158AE0F100EAB3E2 /* MCZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCZRootViewController.h; sourceTree = "<group>"; };
+		F17096A7158AE0F100EAB3E2 /* MCZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZRootViewController.m; sourceTree = "<group>"; };
+		F17096A9158AE5B200EAB3E2 /* MCZNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCZNetworkClient.h; sourceTree = "<group>"; };
+		F17096AA158AE5B200EAB3E2 /* MCZNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZNetworkClient.m; sourceTree = "<group>"; };
 		F1D1A55B158ADF3200447996 /* eyebeamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyebeamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D1A55F158ADF3200447996 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1D1A561158ADF3200447996 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,10 +32,6 @@
 		F1D1A56D158ADF3200447996 /* eyebeamz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eyebeamz-Prefix.pch"; sourceTree = "<group>"; };
 		F1D1A56E158ADF3200447996 /* MCZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCZAppDelegate.h; sourceTree = "<group>"; };
 		F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCZAppDelegate.m; sourceTree = "<group>"; };
-		F1D1A571158ADF3200447996 /* MCZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCZViewController.h; sourceTree = "<group>"; };
-		F1D1A572158ADF3200447996 /* MCZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCZViewController.m; sourceTree = "<group>"; };
-		F1D1A575158ADF3200447996 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MCZViewController_iPhone.xib; sourceTree = "<group>"; };
-		F1D1A578158ADF3200447996 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MCZViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +80,10 @@
 			children = (
 				F1D1A56E158ADF3200447996 /* MCZAppDelegate.h */,
 				F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */,
-				F1D1A571158ADF3200447996 /* MCZViewController.h */,
-				F1D1A572158ADF3200447996 /* MCZViewController.m */,
-				F17096A2158AE01F00EAB3E2 /* MCZRootViewController.h */,
-				F17096A3158AE01F00EAB3E2 /* MCZRootViewController.m */,
-				F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */,
-				F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */,
+				F17096A6158AE0F100EAB3E2 /* MCZRootViewController.h */,
+				F17096A7158AE0F100EAB3E2 /* MCZRootViewController.m */,
+				F17096A9158AE5B200EAB3E2 /* MCZNetworkClient.h */,
+				F17096AA158AE5B200EAB3E2 /* MCZNetworkClient.m */,
 				F1D1A566158ADF3200447996 /* Supporting Files */,
 			);
 			path = eyebeamz;
@@ -158,8 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1D1A56A158ADF3200447996 /* InfoPlist.strings in Resources */,
-				F1D1A576158ADF3200447996 /* MCZViewController_iPhone.xib in Resources */,
-				F1D1A579158ADF3200447996 /* MCZViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +164,8 @@
 			files = (
 				F1D1A56C158ADF3200447996 /* main.m in Sources */,
 				F1D1A570158ADF3200447996 /* MCZAppDelegate.m in Sources */,
-				F1D1A573158ADF3200447996 /* MCZViewController.m in Sources */,
-				F17096A4158AE01F00EAB3E2 /* MCZRootViewController.m in Sources */,
+				F17096A8158AE0F100EAB3E2 /* MCZRootViewController.m in Sources */,
+				F17096AB158AE5B200EAB3E2 /* MCZNetworkClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,22 +180,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1D1A575158ADF3200447996 /* en */,
-			);
-			name = MCZViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1D1A578158ADF3200447996 /* en */,
-			);
-			name = MCZViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -213,6 +189,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ryohei Ueda (RFZEX72NST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -228,6 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "B28CB573-75C2-44FB-B31A-C21124E1C962";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -239,6 +217,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ryohei Ueda (RFZEX72NST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -248,6 +227,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "B28CB573-75C2-44FB-B31A-C21124E1C962";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
