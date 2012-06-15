@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1D1A560158ADF3200447996 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A55F158ADF3200447996 /* UIKit.framework */; };
+		F1D1A562158ADF3200447996 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A561158ADF3200447996 /* Foundation.framework */; };
+		F1D1A564158ADF3200447996 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A563158ADF3200447996 /* CoreGraphics.framework */; };
+		F1D1A56A158ADF3200447996 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1D1A568158ADF3200447996 /* InfoPlist.strings */; };
+		F1D1A56C158ADF3200447996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D1A56B158ADF3200447996 /* main.m */; };
+		F1D1A570158ADF3200447996 /* MCZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */; };
+		F1D1A573158ADF3200447996 /* MCZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D1A572158ADF3200447996 /* MCZViewController.m */; };
+		F1D1A576158ADF3200447996 /* MCZViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */; };
+		F1D1A579158ADF3200447996 /* MCZViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1D1A55B158ADF3200447996 /* eyebeamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyebeamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D1A55F158ADF3200447996 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1D1A561158ADF3200447996 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1D1A563158ADF3200447996 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1D1A567158ADF3200447996 /* eyebeamz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eyebeamz-Info.plist"; sourceTree = "<group>"; };
+		F1D1A569158ADF3200447996 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1D1A56B158ADF3200447996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1D1A56D158ADF3200447996 /* eyebeamz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eyebeamz-Prefix.pch"; sourceTree = "<group>"; };
+		F1D1A56E158ADF3200447996 /* MCZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCZAppDelegate.h; sourceTree = "<group>"; };
+		F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCZAppDelegate.m; sourceTree = "<group>"; };
+		F1D1A571158ADF3200447996 /* MCZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCZViewController.h; sourceTree = "<group>"; };
+		F1D1A572158ADF3200447996 /* MCZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCZViewController.m; sourceTree = "<group>"; };
+		F1D1A575158ADF3200447996 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MCZViewController_iPhone.xib; sourceTree = "<group>"; };
+		F1D1A578158ADF3200447996 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MCZViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1D1A558158ADF3200447996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D1A560158ADF3200447996 /* UIKit.framework in Frameworks */,
+				F1D1A562158ADF3200447996 /* Foundation.framework in Frameworks */,
+				F1D1A564158ADF3200447996 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1D1A550158ADF3200447996 = {
+			isa = PBXGroup;
+			children = (
+				F1D1A565158ADF3200447996 /* eyebeamz */,
+				F1D1A55E158ADF3200447996 /* Frameworks */,
+				F1D1A55C158ADF3200447996 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1D1A55C158ADF3200447996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1A55B158ADF3200447996 /* eyebeamz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1D1A55E158ADF3200447996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1A55F158ADF3200447996 /* UIKit.framework */,
+				F1D1A561158ADF3200447996 /* Foundation.framework */,
+				F1D1A563158ADF3200447996 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1D1A565158ADF3200447996 /* eyebeamz */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1A56E158ADF3200447996 /* MCZAppDelegate.h */,
+				F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */,
+				F1D1A571158ADF3200447996 /* MCZViewController.h */,
+				F1D1A572158ADF3200447996 /* MCZViewController.m */,
+				F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */,
+				F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */,
+				F1D1A566158ADF3200447996 /* Supporting Files */,
+			);
+			path = eyebeamz;
+			sourceTree = "<group>";
+		};
+		F1D1A566158ADF3200447996 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1A567158ADF3200447996 /* eyebeamz-Info.plist */,
+				F1D1A568158ADF3200447996 /* InfoPlist.strings */,
+				F1D1A56B158ADF3200447996 /* main.m */,
+				F1D1A56D158ADF3200447996 /* eyebeamz-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1D1A55A158ADF3200447996 /* eyebeamz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D1A57C158ADF3200447996 /* Build configuration list for PBXNativeTarget "eyebeamz" */;
+			buildPhases = (
+				F1D1A557158ADF3200447996 /* Sources */,
+				F1D1A558158ADF3200447996 /* Frameworks */,
+				F1D1A559158ADF3200447996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eyebeamz;
+			productName = eyebeamz;
+			productReference = F1D1A55B158ADF3200447996 /* eyebeamz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1D1A552158ADF3200447996 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MCZ;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F1D1A555158ADF3200447996 /* Build configuration list for PBXProject "eyebeamz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1D1A550158ADF3200447996;
+			productRefGroup = F1D1A55C158ADF3200447996 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1D1A55A158ADF3200447996 /* eyebeamz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1D1A559158ADF3200447996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D1A56A158ADF3200447996 /* InfoPlist.strings in Resources */,
+				F1D1A576158ADF3200447996 /* MCZViewController_iPhone.xib in Resources */,
+				F1D1A579158ADF3200447996 /* MCZViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1D1A557158ADF3200447996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D1A56C158ADF3200447996 /* main.m in Sources */,
+				F1D1A570158ADF3200447996 /* MCZAppDelegate.m in Sources */,
+				F1D1A573158ADF3200447996 /* MCZViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1D1A568158ADF3200447996 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1D1A569158ADF3200447996 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1D1A575158ADF3200447996 /* en */,
+			);
+			name = MCZViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1D1A578158ADF3200447996 /* en */,
+			);
+			name = MCZViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1D1A57A158ADF3200447996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1D1A57B158ADF3200447996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1D1A57D158ADF3200447996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eyebeamz/eyebeamz-Prefix.pch";
+				INFOPLIST_FILE = "eyebeamz/eyebeamz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1D1A57E158ADF3200447996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eyebeamz/eyebeamz-Prefix.pch";
+				INFOPLIST_FILE = "eyebeamz/eyebeamz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1D1A555158ADF3200447996 /* Build configuration list for PBXProject "eyebeamz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D1A57A158ADF3200447996 /* Debug */,
+				F1D1A57B158ADF3200447996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D1A57C158ADF3200447996 /* Build configuration list for PBXNativeTarget "eyebeamz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D1A57D158ADF3200447996 /* Debug */,
+				F1D1A57E158ADF3200447996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1D1A552158ADF3200447996 /* Project object */;
+}
