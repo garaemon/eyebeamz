@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F17096A4158AE01F00EAB3E2 /* MCZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17096A3158AE01F00EAB3E2 /* MCZRootViewController.m */; };
 		F1D1A560158ADF3200447996 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A55F158ADF3200447996 /* UIKit.framework */; };
 		F1D1A562158ADF3200447996 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A561158ADF3200447996 /* Foundation.framework */; };
 		F1D1A564158ADF3200447996 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1A563158ADF3200447996 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F17096A2158AE01F00EAB3E2 /* MCZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCZRootViewController.h; sourceTree = "<group>"; };
+		F17096A3158AE01F00EAB3E2 /* MCZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCZRootViewController.m; sourceTree = "<group>"; };
 		F1D1A55B158ADF3200447996 /* eyebeamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyebeamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D1A55F158ADF3200447996 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F1D1A561158ADF3200447996 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,8 @@
 				F1D1A56F158ADF3200447996 /* MCZAppDelegate.m */,
 				F1D1A571158ADF3200447996 /* MCZViewController.h */,
 				F1D1A572158ADF3200447996 /* MCZViewController.m */,
+				F17096A2158AE01F00EAB3E2 /* MCZRootViewController.h */,
+				F17096A3158AE01F00EAB3E2 /* MCZRootViewController.m */,
 				F1D1A574158ADF3200447996 /* MCZViewController_iPhone.xib */,
 				F1D1A577158ADF3200447996 /* MCZViewController_iPad.xib */,
 				F1D1A566158ADF3200447996 /* Supporting Files */,
@@ -168,6 +173,7 @@
 				F1D1A56C158ADF3200447996 /* main.m in Sources */,
 				F1D1A570158ADF3200447996 /* MCZAppDelegate.m in Sources */,
 				F1D1A573158ADF3200447996 /* MCZViewController.m in Sources */,
+				F17096A4158AE01F00EAB3E2 /* MCZRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				F1D1A57E158ADF3200447996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
